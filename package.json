@@ -1,11 +1,17 @@
 {
-	"name": "NodejsStarterApp",
-	"version": "0.0.1",
+	"name": "cauep.com",
+	"version": "1.0.0",
 	"private": true,
+  	"main": "app.js",
+  	"author": "Caue Polimanti",
+	"license": "ISC",
 	"scripts": {
 		"start": "node app.js"
 	},
 	"dependencies": {
+		"body-parser": "^1.15.2",
+    	"cookie-parser": "^1.4.3",
+		"ejs": "^2.5.5",
 		"express": "4.13.x",
 		"cfenv": "1.0.x"
 	},
