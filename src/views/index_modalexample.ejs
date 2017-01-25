@@ -15,6 +15,9 @@
 
 		<meta charset="utf-8" />
 		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -30,15 +33,20 @@
 				<!-- Main -->
 					<section id="main">
 						<header>
-							<span class="avatar"><img src="images/avatar.jpg" alt="Caue's Picture" /></span>
+							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
 							<h1>Cauê Polimanti</h1>
 							<p>Application Developer</p>
 						</header>
 						<footer>
 							<ul class="icons">
-								<li><a href="mailto: caue.polimanti@gmail.com" class="fa-envelope">E-mail</a></li>
-								<li><a href="https://www.instagram.com/cauegp/" target="_blank" class="fa-instagram">Instagram</a></li>
-								<li><a href="https://br.linkedin.com/in/cpolimanti" target="_blank" class="fa-linkedin">Linkedin</a></li>                
+								<li>
+									<a href="#" class="fa-envelope" data-toggle="modal" data-target="#myModal">
+										<button data-toggle="modal" data-target="#myModal">
+										</button>
+									</a>
+								</li>
+								<li><a href="https://www.instagram.com/cauegp/" class="fa-instagram">Instagram</a></li>
+								<li><a href="https://br.linkedin.com/in/cpolimanti" class="fa-linkedin">Linkedin</a></li>                
 							</ul>
 						</footer>
 					</section>
@@ -46,21 +54,43 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="copyright">
-							<li>&copy; Cauê Polimanti</li><li>Design: HTML5 UP</li>
+							<li>&copy; Cauê Polimanti</li><li>Design: <a href="#">HTML5 UP</a></li>
 						</ul>
 					</footer>
 
 			</div>
 
+			<!-- Trigger the modal with a button -->
+			<!-- Modal -->
+			<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+				
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Modal Header</h4>
+				</div>
+				<div class="modal-body">
+					<p>Some text in the modal.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+				</div>
+
+			</div>
+			</div>
 
 		<!-- Scripts -->
 			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
-			<script>
+			<!-- <script>
 			 	if ('addEventListener' in window) {
 			 		window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
 			 		document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 			 	}
-			 </script>
+			 </script> -->
 
 	</body>
 </html>
